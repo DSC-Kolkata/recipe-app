@@ -58,22 +58,22 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecipeAdapter.RecipeView
         else{
             Picasso.get().load(R.drawable.default_cake_bg).into(holder.recipeImageView);
         }
-        holder.cookingCardAction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, StepListActivity.class);
-                intent.putExtra("selected_recipe", recipeList.get(position));
-                context.startActivity(intent);
-            }
-        });
-        holder.showIngredientsAction.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, IngredientsActivity.class);
-                intent.putExtra("recipe", recipeList.get(position));
-                context.startActivity(intent);
-            }
-        });
+//        holder.cookingCardAction.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(context, StepListActivity.class);
+//                intent.putExtra("selected_recipe", recipeList.get(position));
+//                context.startActivity(intent);
+//            }
+//        });
+//        holder.showIngredientsAction.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(context, IngredientsActivity.class);
+//                intent.putExtra("recipe", recipeList.get(position));
+//                context.startActivity(intent);
+//            }
+//        });
 
     }
 
